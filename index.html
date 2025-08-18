@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Calorias</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <div class="menu">
+                <div class="logo-tipo">
+                    <img src="./icons/perda-de-peso.png" alt="">
+                    <b>Minhas Calorias</b>
+                </div>             
+                <div class="menu-item">
+                    <div class="menu-item-1">
+                        <b>Criar dieta</b>
+                    </div>
+                    <div class="menu-item-2">
+                        <b>Calcular biotipo</b>
+                    </div>
+                    <div class="menu-item-3">
+                        <b>Sobre</b>
+                    </div>
+                </div>
+                <div class="pesquisar-item">
+                    <div class="pesquisar">
+                        <input type="search" placeholder="pesquisar">
+                        <img src="./icons/lupa.png" alt="lupa">
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </header>
+
+    <section>
+            <div class="options">
+                <div class="proteinas options item" id="btnProteinas">Proteinas</div>
+                <div class="proteinas-vegetais options item">Proteinas vegetais</div>
+                <div class="carboidratos options item">Carboidratos</div>
+                <div class="frutas options item">Frutas</div>
+                <div class="vegetais options item">Vegetais</div>
+            </div>
+            <div class="corpo">
+                <div class="left">olá mundo</div>
+                <div class="center fade-in">
+                    <p id="mensagem-boas-vindas">
+                        <span>Bem-vindo ao <strong>Minhas Calorias</strong>!</span><br>
+                        <span>Descubra uma forma simples e divertida de cuidar da sua alimentação.</span><br>
+                        <span>Aqui você pode escolher seus <strong>alimentos</strong>, consultar <strong>informações nutricionais</strong> e criar <strong>dietas balanceadas</strong>.</span><br>
+                        <span>Também é possível calcular seu <strong>tipo físico</strong> no menu.</span><br>
+                        <span>Ao finalizar sua dieta, você verá o total de <strong>calorias</strong> e <strong>nutrientes</strong> e poderá baixar tudo facilmente.</span><br>
+                        <span>É rápido, prático e totalmente <strong>gratuito</strong>! </span>
+                    </p>
+                    <img id="img-alimentos" class="img-alimentos" src="./imagens/6-alimentos-ricos-em-proteinas-e-beneficos-para-o-coracao.jpg" alt="imagem de alimentos">
+                    <div id="lista-alimentos" class="flex-container" style="display: none;">
+
+                    </div>
+                </div>
+                <div class="right">olá mundo</div>
+            </div>
+
+    </section>
+    <script type="module" src="script.js/script.js"></script>
+</body>
+</html>
