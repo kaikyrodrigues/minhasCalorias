@@ -20,11 +20,11 @@ body, html{
     background-color: #F0FFFF;
 }
 .menu{
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: #00BFFF;
     display: flex;
-    gap: 5px;
+    gap: 20px;
 }
 .logo-tipo{
     display: flex;
@@ -38,7 +38,19 @@ body, html{
     padding-left: 10px;
 
 }
-
+.ad-top {
+  width: 320px;     /* largura padrão de banner mobile */
+  height: 100px;    /* pode ser 50px também */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  background: #ddd; /* cor de fundo só pra visualizar o espaço */
+  text-align: center;
+  line-height: 100px; /* alinha texto verticalmente se tiver */
+  color: #333;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .logo-tipo img{
     width: 58px;
     height: auto;
@@ -70,6 +82,9 @@ body, html{
 .menu-item-3:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menu-mobile{
+    display: none;
 }
 .pesquisar-item{
     display: flex;
@@ -192,4 +207,101 @@ body, html{
 .alimento img{
     width: 32px;
     height: auto;
+}
+.calculadora{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 40px;
+}
+.cal-item{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+    font-family: 'roboto';
+}
+.cal-item h2{
+    font-family: 'roboto', sans-serif;
+
+}
+.cal-item select{
+    cursor: pointer;
+}
+#btnCalcular{
+    background-color: #00BFFF;
+    color: #F0FFFF;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+}
+#btnLimpar{
+     background-color: #00BFFF;
+    color: #F0FFFF;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    display: none;
+}
+@media (max-width: 768px){
+    .menu{
+    height: 80px;
+    width: 100%;
+    background-color: #00BFFF;
+    display: flex;
+    gap: 5px;
+}
+.logo-tipo{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 0;
+}
+.logo-tipo img{
+    width: 80px;
+    height: auto;
+}
+.menu-item-1,
+.menu-item-2,
+.menu-item-3 {
+    display: none;
+}
+.menu-mobile{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-mobile img{
+    width: 48px;
+    height: auto;
+    padding-right: 5px;
+    margin-left: -8;
+}
+.pesquisar-item{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisar input{
+    border: 0;
+    height: 38px;
+    width: 120px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: 'cereal', sans-serif;
+    color: #767777;
+    outline: none;
+}
 }

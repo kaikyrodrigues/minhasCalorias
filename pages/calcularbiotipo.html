@@ -28,7 +28,7 @@
                 <div class="pesquisar-item">
                     <div class="pesquisar">
                         <input type="search" placeholder="pesquisar">
-                        <img src="./icons/lupa.png" alt="lupa">
+                        <img src="../icons/lupa.png" alt="lupa">
                     </div>
                 </div>
             </div>
@@ -36,9 +36,46 @@
     </header>
 
     <main>
+        <div class="calculadora fade-in">
+            
+            <div class="cal-item"><h2>Calculadora de Biotipo</h2></div>
+            <div class="cal-item">
+                <label for="">Seu metabolismo é rápido ou lento?</label>
+                <select name="" id="metabolismo">
+                    <option value="rapido">Rápido</option>
+                    <option value="normal">Normal</option>
+                    <option value="lento">Lento</option>
+                </select>
+            </div>
+            
+            <div class="cal-item">
+                <label for="">Você ganha peso facilmente?</label>
+                <select name="" id="peso">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
 
+            
+            <div class="cal-item">
+                <label for="">Seu corpo é magro ou largo?</label>
+                <select name="" id="estrutura">
+                    <option value="magro">Magro</option>
+                    <option value="medio">Médio</option>
+                    <option value="largo">Largo</option>
+                </select>
+
+            </div>
+            
+            <div class="cal-item fade-in">
+                <button id="btnCalcular">Calcular</button>
+                <button id="btnLimpar">Limpar</button>
+            </div>
+
+            <div class="cal-item fade-in" id="result-bioptipo"></div>
+        </div>
     </main>
 
-    <script src="../script.js/script.js"></script>
+    <script type="module"  src="../script.js/calculadora.js"></script>
 </body>
 </html>

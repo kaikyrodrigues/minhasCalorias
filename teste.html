@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Propagandas Mobile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Banner no topo */
+    .ad-top {
+      background: orange;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    main {
+      padding: 15px;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+
+    /* Propaganda dentro do conteúdo */
+    .ad-inline {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin: 15px 0;
+    }
+
+    /* Rodapé fixo */
+    .ad-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: green;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Propaganda de tela cheia (interstitial) */
+    .ad-fullscreen {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      flex-direction: column;
+    }
+
+    .ad-fullscreen button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Site Mobile</h1>
+  </header>
+
+  <!-- Banner no topo -->
+  <div class="ad-top">Propaganda Banner Topo (320x100)</div>
+
+  <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- Propaganda no meio do conteúdo -->
+    <div class="ad-inline">Propaganda dentro do conteúdo</div>
+
+    <p>Mais texto aqui para simular conteúdo do site...</p>
+    <p>Continue lendo, bla bla bla...</p>
+  </main>
+
+  <!-- Rodapé fixo -->
+  <div class="ad-footer">Propaganda Rodapé Fixo</div>
+
+  <!-- Tela cheia (interstitial) -->
+  <div class="ad-fullscreen" id="fullscreenAd">
+    <p>Propaganda Tela Cheia</p>
+    <button onclick="fecharAd()">Fechar</button>
+  </div>
+
+  <script>
+    // Mostra a propaganda de tela cheia após 3 segundos
+    setTimeout(() => {
+      document.getElementById('fullscreenAd').style.display = 'flex';
+    }, 3000);
+
+    function fecharAd() {
+      document.getElementById('fullscreenAd').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
