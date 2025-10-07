@@ -29,17 +29,9 @@ body, html{
 .logo-tipo{
     display: flex;
     flex: 3;
-    font-family: tangerine, sans-serif;
-    color: black;
-    font-size: 45px;
-    font-weight: 800;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 10px;
-
 }
 .ad-top {
-  width: 320px;     /* largura padrão de banner mobile */
+  width: 100%;     /* largura padrão de banner mobile */
   height: 100px;    /* pode ser 50px também */
   margin: 0 auto;   /* centraliza horizontalmente */
   background: #ddd; /* cor de fundo só pra visualizar o espaço */
@@ -52,7 +44,7 @@ a{
     color: inherit;
 }
 .logo-tipo img{
-    width: 58px;
+    width: 100px;
     height: auto;
 }
 .menu-item{
@@ -131,15 +123,20 @@ a{
     height: 80px;
 }
 .item{
-    width: 150px;
-    height: 40px;
+       width: 150px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border-radius: 10px;
-    background-color: rgb(223, 222, 222);
-    font-family: 'cereal', sans-serif;
+    background-color: rgba(63, 191, 241, 0.5);
+    font-family: 'roboto', sans-serif;
+    padding: 4px;
+}
+.item.selecionado{
+    background: rgba(0, 191, 255, 0.9);
+    transition: all 0.2s ease;
 }
 .corpo{
     display: flex;
@@ -303,5 +300,68 @@ a{
     font-family: 'cereal', sans-serif;
     color: #767777;
     outline: none;
+}
+.left{
+    display: none;
+}
+.right{
+    display: none;
+}
+.ad-top {
+  width: 100%;     /* largura padrão de banner mobile */
+  height: 100px;    /* pode ser 50px também */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  background: #ddd; /* cor de fundo só pra visualizar o espaço */
+  text-align: center;
+  line-height: 100px; /* alinha texto verticalmente se tiver */
+  color: #333;
+}
+.menuresponsivo{
+    display: none; /* escondido por padrão */
+    flex-direction: column;
+    background: rgba(0, 191, 255, 0.9);
+    position: absolute;
+    top: 60px; /* altura do header */
+    width: 150px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    color: white;
+    gap: 15px;
+    font-family: 'roboto', sans-serif;
+    list-style: none;
+    text-align: right;
+    transition: all 0.2s ease;
+    
+}
+.menuresponsivo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menuresponsivo.mostrar{
+    display: flex;
+}
+.item{
+    flex: 1 1 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(63, 191, 241, 0.5);
+    font-family: 'roboto', sans-serif;
+    padding: 8px;
+}
+.item.selecionado{
+    background: rgba(0, 191, 255, 0.9);
+    transition: all 0.2s ease;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
 }
 }

@@ -6,6 +6,8 @@ const mesgBoasVindas = document.querySelector("#mensagem-boas-vindas")
 const listaDeAlimentos = document.querySelector("#lista-alimentos")
 const imgAlientos = document.querySelector("#img-alimentos")
 const pesquisar = document.querySelector("#pesquisar")
+const btnMenuMobile = document.querySelector("#btn-menu-mobile")
+const menuMBL = document.querySelector("#menu-mbl")
 
 import {proteinas, proteinasVegetais, carboidratos, frutas} from './alimentos.js'
 
@@ -66,7 +68,7 @@ function mostrarPesquisa(lista){
 };
 
 pesquisar.addEventListener("input", (e)=>{
-    const texto = e.target.value.toLowerCase().trim()
+    const texto = e.target.value.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     if(texto === ""){
         listaDeAlimentos.innerHTML = "";
@@ -76,11 +78,24 @@ pesquisar.addEventListener("input", (e)=>{
     }
 
     const filtrados = alimentos.filter(el =>
-        el.nome.toLocaleLowerCase().includes(texto)
+        el.nome.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(texto)
     );
     mostrarPesquisa(filtrados)
 })
 
+btnMenuMobile.addEventListener("click", () =>{
+    menuMBL.classList.toggle("mostrar")
+})
 
 
+const itensSelect = document.querySelectorAll(".options .item");
 
+itensSelect.forEach(item =>{
+    item.addEventListener("click", ()=>{
+        itensSelect.forEach(i =>{
+            i.classList.remove("selecionado")
+        })
+
+        item.classList.add("selecionado")
+    })
+})
