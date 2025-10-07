@@ -201,6 +201,12 @@ a{
     padding-top: 5px;
     cursor: pointer;
 }
+.alimento.selecionado {
+  background-color: #5de05d; /* azul claro */
+  color: #fff; /* texto branco para contraste */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
 .alimento img{
     width: 32px;
     height: auto;
@@ -247,6 +253,43 @@ a{
     border: 0;
     font-size: 20px;
     display: none;
+}
+.add-remove{
+    display: none;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #00BFFF;
+    position: fixed;
+    z-index: 1000; 
+    bottom: 0;
+}
+.add-remove1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.add-remove1 img{
+    width: 32px;
+    height: 32px;
+}
+.add-remove2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.add-remove2 img{
+    width: 32px;
+    height: 32px;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
 }
 @media (max-width: 768px){
     .menu{

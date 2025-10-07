@@ -8,7 +8,7 @@ const imgAlientos = document.querySelector("#img-alimentos")
 const pesquisar = document.querySelector("#pesquisar")
 const btnMenuMobile = document.querySelector("#btn-menu-mobile")
 const menuMBL = document.querySelector("#menu-mbl")
-
+const barraAddRemove =  document.querySelector("#addremove")
 import {proteinas, proteinasVegetais, carboidratos, frutas} from './alimentos.js'
 
 const alimentos = [...proteinas,...proteinasVegetais,...carboidratos,...frutas]
@@ -99,3 +99,53 @@ itensSelect.forEach(item =>{
         item.classList.add("selecionado")
     })
 })
+
+listaDeAlimentos.addEventListener("click", (e)=>{
+    const alimento =  e.target.closest(".alimento");
+    if(!alimento) return;
+
+    alimento.classList.toggle("selecionado");
+
+    atualizarBarra();
+})
+
+function atualizarBarra(){
+    const contarAlimentos = document.querySelectorAll(".alimento.selecionado").length;
+    const alimentoSelecionado = document.querySelector(".item.selecionado, .alimento.selecionado");
+
+    if(alimentoSelecionado){
+        barraAddRemove.style.display = "flex";
+        let contador = barraAddRemove.querySelector(".contador");
+
+        if(!contador){
+            contador = document.createElement("div");
+            contador.className = "contador";
+            barraAddRemove.insertBefore(contador, barraAddRemove.firstChild.nextSibling);
+        }
+        contador.textContent = `${contarAlimentos} selecionado${contarAlimentos === 1 ? "" : "s"}`
+    }else{
+        barraAddRemove.style.display = "none";
+    }
+}
+
+const btnAdd =  document.querySelector(".add-remove1");
+const btnDelete = document.querySelector(".add-remove2");
+
+if(btnDelete){
+    btnDelete.addEventListener("click", ()=>{
+        document.querySelectorAll(".alimento.selecionado").forEach(el => el.remove());
+        atualizarBarra();
+    })
+}
+
+if(btnAdd){
+    btnAdd.addEventListener("click", ()=>{
+        const selecionados =  Array.from(document.querySelectorAll(".alimento.selecioado"))
+        selecionados.map(el => el.querySelector("strong")?.textContent?.trim() || "item");
+
+        console.log("Adicionar esses itens:", selecionados);
+
+        document.querySelectorAll(".alimento.selecionado").forEach(el => el.classList.remove("selecionado"));
+        atualizarBarra();
+    })
+}
