@@ -1,4 +1,4 @@
- Minhas Calorias
+- Minhas Calorias
 
 Status:  Projeto em desenvolvimento
 
@@ -8,21 +8,20 @@ A ideia é permitir que a pessoa selecione alimentos, visualize seus valores nut
  Objetivo do Projeto
 
 Este projeto foi desenvolvido com o propósito de praticar lógica de programação, manipulação do DOM e organização de código em JavaScript.
-Ele também faz parte do meu aprendizado em Front-End, utilizando apenas tecnologias básicas da web.
+ele também faz parte do meu aprendizado em Front-End, utilizando apenas tecnologias básicas da web.
 
- Conceitos Aplicados
+- Conceitos Aplicados
 
-Estruturas de dados com arrays e objetos
+estruturas de dados com arrays e objetos
 
-Manipulação de elementos do DOM com JavaScript
+manipulação de elementos do DOM com JavaScript
 
-Uso de funções e eventos para interação do usuário
+uso de funções e eventos para interação do usuário
 
-Separação de código em arquivos HTML, CSS e JS
+separação de código em arquivos HTML, CSS e JS
 
-Boas práticas de organização e legibilidade de código
 
- Tecnologias Utilizadas
+- Tecnologias Utilizadas
 
 HTML5
 
@@ -30,11 +29,11 @@ CSS3
 
 JavaScript (puro)
 
- Funcionalidades
+- Funcionalidades
 
-Seleção de alimentos a partir de categorias (proteínas, carboidratos, frutas, etc.)
+seleção de alimentos a partir de categorias (proteínas, carboidratos, frutas, etc.)
 
-Exibição dos valores nutricionais de cada alimento
+exibição dos valores nutricionais de cada alimento
 
 Montagem de uma dieta personalizada
 
