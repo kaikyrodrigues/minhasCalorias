@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Calorias</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <div class="menu">
+                <div class="logo-tipo">
+                    <a href="../index.html"><img src="../icons/Logo.png" alt=""></a>
+                </div>             
+                <div class="menu-item">
+                    <div class="menu-item-1" id="btnCriarDieta" >
+                        <a href="./pages/criardieta.html"><b>Criar dieta</b></a>                      
+                    </div>
+                    <div class="menu-item-2">
+                       <a href="./pages/calcularbiotipo.html"><b>Calcular biotipo</b></a> 
+                    </div>
+                    <div class="menu-item-3">
+                        <b>Sobre</b>
+                    </div>
+                </div>
+                <div class="pesquisar-item">
+                    <div class="pesquisar">
+                        <input id="pesquisar" type="search" placeholder="pesquisar">
+                        <img src="../icons/lupa.png" alt="lupa">
+                    </div>
+                </div>
+                <div class="menu-mobile">
+                    <img src="../icons/menu-aberto.png" alt="menu" id="btn-menu-mobile">
+
+                    <nav class="menuresponsivo fade-in" id="menu-mbl">
+                        <li><a href="http://">Criar dieta</a></li>
+                        <li><a href="./pages/calcularbiotipo.html">Calcular biotipo</a></li>
+                        <li><a href="http://">Sobre</a></li>
+                    </nav>
+                </div>
+            </div>
+        </menu>
+        <div class="ad-top"></div>
+
+    </header>
+
+    <div id="lista-alimentos"></div>
+
+    <div id="carrinho">
+  <h2>Alimentos Selecionados</h2>
+  <div id="lista-carrinho"></div>
+
+  <div id="totais">
+    <h3>Total:</h3>
+    <div><p class="totais-info" id="total-prot"></p></div>
+    <div><p class="totais-info" id="total-carb"></p></div>
+    <div><p class="totais-info" id="total-gord"></p></div>
+    <div><p class="totais-info" id="total-kcal"></p></div>
+    
+  </div>
+</div>
+
+
+    <script type="module" src="../script.js/criar-dieta.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 export const proteinas=[
-    {
+    {   
         nome: 'Coxa de frango',
         quantidade: 100,
         unidade: 'g',
@@ -7,7 +7,7 @@ export const proteinas=[
         gord: 11.06,
         carb: 0,
         kcal: 214,
-        imagem: './icons/proteinas/coxa-de-frango.png'
+        imagem: '/icons/proteinas/coxa-de-frango.png'
     },
     {
         nome: 'Peito de frango',
@@ -17,7 +17,7 @@ export const proteinas=[
         gord: 7.72,
         carb: 0,
         kcal: 195,
-        imagem:'./icons/proteinas/peito-de-frango(1).png'
+        imagem:'/icons/proteinas/peito-de-frango(1).png'
     },
     {
         nome: 'Sobre coxa',
@@ -27,7 +27,7 @@ export const proteinas=[
         gord: 10.88,
         carb: 0,
         kcal: 209,
-        imagem:'./icons/proteinas/sobre-coxa.png'
+        imagem:'/icons/proteinas/sobre-coxa.png'
     },
     {
         nome: 'File de peito',
@@ -37,7 +37,7 @@ export const proteinas=[
         gord: 1,
         carb: 0,
         kcal: 101,
-        imagem:'./icons/proteinas/peito-de-frango.png'
+        imagem:'/icons/proteinas/peito-de-frango.png'
     },
     {
         nome: 'Ovo',
@@ -47,7 +47,7 @@ export const proteinas=[
         gord: 4.97,
         carb: 0.38,
         kcal: 74,
-        imagem:'./icons/proteinas/ovo-cozido.png'
+        imagem:'/icons/proteinas/ovo-cozido.png'
     },
     {
         nome: 'Salmão',
@@ -57,7 +57,7 @@ export const proteinas=[
         gord: 5.93,
         carb: 0,
         kcal: 146,
-        imagem:'./icons/proteinas/salmao.png'
+        imagem:'/icons/proteinas/salmao.png'
     },
     {
         nome: 'Tilápia',
@@ -67,7 +67,7 @@ export const proteinas=[
         gord: 1.7,
         carb: 0,
         kcal: 96,
-        imagem:'./icons/proteinas/tilapia.png'
+        imagem:'/icons/proteinas/tilapia.png'
     },
     {
         nome: 'Atum',
@@ -77,7 +77,7 @@ export const proteinas=[
         gord: 0.95,
         carb: 0,
         kcal: 108,
-        imagem:'./icons/proteinas/atum.png'
+        imagem:'/icons/proteinas/atum.png'
     },
     {
         nome: 'Patinho',
@@ -87,7 +87,7 @@ export const proteinas=[
         gord: 2.43,
         carb: 0,
         kcal: 127,
-        imagem:'./icons/proteinas/patinho.png'
+        imagem:'/icons/proteinas/patinho.png'
     },
     {
         nome: 'Alcatra',
@@ -97,7 +97,7 @@ export const proteinas=[
         gord: 7.81,
         carb: 0,
         kcal: 108,
-        imagem:'./icons/proteinas/alcatra.png'
+        imagem:'/icons/proteinas/alcatra.png'
     },
     {
         nome: 'Contra-filé',
@@ -107,7 +107,7 @@ export const proteinas=[
         gord: 4.68,
         carb: 0,
         kcal: 135,
-        imagem:'./icons/proteinas/contra-file.png'
+        imagem:'/icons/proteinas/contra-file.png'
     },
     {
         nome: 'Coxão mole',
@@ -117,7 +117,7 @@ export const proteinas=[
         gord: 8.58,
         carb: 0,
         kcal: 169,
-        imagem:'./icons/proteinas/coxao.png'
+        imagem:'/icons/proteinas/coxao.png'
     },
     {
         nome: 'Coxão duro',
@@ -127,7 +127,7 @@ export const proteinas=[
         gord: 4.3,
         carb: 0,
         kcal: 121,
-        imagem:'./icons/proteinas/coxao.png'
+        imagem:'/icons/proteinas/coxao.png'
     },
     {
         nome: 'Acém',
@@ -137,7 +137,7 @@ export const proteinas=[
         gord: 10.00,
         carb: 0,
         kcal: 200,
-        imagem:'./icons/proteinas/acem.png'
+        imagem:'/icons/proteinas/acem.png'
     },
     {
         nome: 'Musculo',
@@ -147,7 +147,7 @@ export const proteinas=[
         gord: 6.52,
         carb: 0,
         kcal: 152,
-        imagem:'./icons/proteinas/musculo.png'
+        imagem:'/icons/proteinas/musculo.png'
     },
     {
         nome: 'Lombo',
@@ -157,7 +157,7 @@ export const proteinas=[
         gord: 6.00,
         carb: 0,
         kcal: 190,
-        imagem:'./icons/proteinas/porco.png'
+        imagem:'/icons/proteinas/porco.png'
     },
     {
         nome: 'Pernil',
@@ -167,7 +167,7 @@ export const proteinas=[
         gord: 9.00,
         carb: 0,
         kcal: 210,
-        imagem:'./icons/proteinas/porco.png'
+        imagem:'/icons/proteinas/porco.png'
     },
     {
         nome: 'Costela',
@@ -177,7 +177,7 @@ export const proteinas=[
         gord: 16.00,
         carb: 0,
         kcal: 260,
-        imagem:'./icons/proteinas/porco.png'
+        imagem:'/icons/proteinas/porco.png'
     }
 
         
@@ -192,7 +192,7 @@ export const proteinasVegetais =[
         gord: 0.5,
         carb: 13.6,
         kcal: 76,
-        imagem:'./icons/proteinas-vegetais/feijao.png'
+        imagem:'/icons/proteinas-vegetais/feijao.png'
     },
     {
         nome: 'Feijão preto',
@@ -202,7 +202,7 @@ export const proteinasVegetais =[
         gord: 0.54,
         carb: 23.71,
         kcal: 132,
-        imagem:'./icons/proteinas-vegetais/feijao-preto.png'
+        imagem:'/icons/proteinas-vegetais/feijao-preto.png'
     },
     {
         nome: 'Lentilha',
@@ -212,7 +212,7 @@ export const proteinasVegetais =[
         gord: 6.76,
         carb: 18.73,
         kcal: 165,
-        imagem:'./icons/proteinas-vegetais/lentilhas.png'
+        imagem:'/icons/proteinas-vegetais/lentilhas.png'
     },
     {
         nome: 'Grão de bico',
@@ -222,7 +222,7 @@ export const proteinasVegetais =[
         gord: 2.59,
         carb: 27.42,
         kcal: 164,
-        imagem:'./icons/proteinas-vegetais/grao-de-bico.png'
+        imagem:'/icons/proteinas-vegetais/grao-de-bico.png'
     },
     {
         nome: 'Ervilha seca',
@@ -232,7 +232,7 @@ export const proteinasVegetais =[
         gord: 1.0,
         carb: 64,
         kcal: 340,
-        imagem:'./icons/proteinas-vegetais/ervilha.png'
+        imagem:'/icons/proteinas-vegetais/ervilha.png'
     },
     {
         nome: 'Soja grão',
@@ -242,7 +242,7 @@ export const proteinasVegetais =[
         gord: 25.4,
         carb: 33.55,
         kcal: 471,
-        imagem:'./icons/proteinas-vegetais/soja.png'
+        imagem:'/icons/proteinas-vegetais/soja.png'
     }
 ];
 
@@ -255,7 +255,7 @@ export const carboidratos =[
         gord: 0.3,
         carb: 28,
         kcal: 130,
-        imagem:'./icons/carboidratos/arroz.png'
+        imagem:'/icons/carboidratos/arroz.png'
     },
     {
         nome: 'Pão francês',
@@ -265,7 +265,7 @@ export const carboidratos =[
         gord: 1.5,
         carb: 26,
         kcal: 135,
-        imagem:'./icons/carboidratos/pao.png'
+        imagem:'/icons/carboidratos/pao.png'
     },
     {
         nome: 'Batata inglesa',
@@ -275,7 +275,7 @@ export const carboidratos =[
         gord: 0.1,
         carb: 20,
         kcal: 86,
-        imagem:'./icons/carboidratos/potato.png'
+        imagem:'/icons/carboidratos/potato.png'
     },
     {
         nome: 'Batata doce',
@@ -285,7 +285,7 @@ export const carboidratos =[
         gord: 0.1,
         carb: 21,
         kcal: 86,
-        imagem:'./icons/carboidratos/batata-doce.png'
+        imagem:'/icons/carboidratos/batata-doce.png'
     },
     {
         nome: 'Macarrão',
@@ -295,7 +295,7 @@ export const carboidratos =[
         gord: 1.1,
         carb: 25,
         kcal: 131,
-        imagem:'./icons/carboidratos/macarrao.png'
+        imagem:'/icons/carboidratos/macarrao.png'
     },
     {
         nome: 'Aveia flocos',
@@ -305,7 +305,7 @@ export const carboidratos =[
         gord: 7,
         carb: 66,
         kcal: 389,
-        imagem:'./icons/carboidratos/aveia.png'
+        imagem:'/icons/carboidratos/aveia.png'
     },
     {
         nome: 'Banana prata',
@@ -315,7 +315,7 @@ export const carboidratos =[
         gord: 0.3,
         carb: 23,
         kcal: 89,
-        imagem:'./icons/carboidratos/bananas.png'
+        imagem:'/icons/carboidratos/bananas.png'
     },
     {
         nome: 'Feijão CA cozido',
@@ -325,7 +325,7 @@ export const carboidratos =[
         gord: 0.5,
         carb: 14,
         kcal: 127,
-        imagem:'./icons/carboidratos/feijao.png'
+        imagem:'/icons/carboidratos/feijao.png'
     },
     {
         nome: 'Milho cozido',
@@ -335,7 +335,7 @@ export const carboidratos =[
         gord: 1.5,
         carb: 19,
         kcal: 96,
-        imagem:'./icons/carboidratos/milho.png'
+        imagem:'/icons/carboidratos/milho.png'
     },
     {
         nome: 'Mandioca cozida',
@@ -345,7 +345,7 @@ export const carboidratos =[
         gord: 0.3,
         carb: 30,
         kcal: 125,
-        imagem:'./icons/carboidratos/mandioca.png'
+        imagem:'/icons/carboidratos/mandioca.png'
     }
 ];
 
@@ -358,7 +358,7 @@ export const frutas =[
         gord: 0.3,
         carb: 22.8,
         kcal: 96,
-        imagem:'./icons/frutas/bananas.png'
+        imagem:'/icons/frutas/bananas.png'
     },
     {
         nome: 'Maçã',
@@ -368,7 +368,7 @@ export const frutas =[
         gord: 0.2,
         carb: 13.8,
         kcal: 52,
-        imagem:'./icons/frutas/maca.png'
+        imagem:'/icons/frutas/maca.png'
     },
     {
         nome: 'Laranja',
@@ -378,7 +378,7 @@ export const frutas =[
         gord: 0.1,
         carb: 11.8,
         kcal: 47,
-        imagem:'./icons/frutas/laranja.png'
+        imagem:'/icons/frutas/laranja.png'
     },
     {
         nome: 'Mamão',
@@ -388,7 +388,7 @@ export const frutas =[
         gord: 0.1,
         carb: 10.8,
         kcal: 43,
-        imagem:'./icons/frutas/mamao.png'
+        imagem:'/icons/frutas/mamao.png'
     },
     {
         nome: 'Uva',
@@ -398,7 +398,7 @@ export const frutas =[
         gord: 0.2,
         carb: 17.0,
         kcal: 69,
-        imagem:'./icons/frutas/uva.png'
+        imagem:'/icons/frutas/uva.png'
     },
     {
         nome: 'Manga',
@@ -408,7 +408,7 @@ export const frutas =[
         gord: 0.4,
         carb: 14.9,
         kcal: 60,
-        imagem:'./icons/frutas/manga.png'
+        imagem:'/icons/frutas/manga.png'
     },
     {
         nome: 'Melancia',
@@ -418,7 +418,7 @@ export const frutas =[
         gord: 0.2,
         carb: 7.6,
         kcal: 30,
-        imagem:'./icons/frutas/melancia.png'
+        imagem:'/icons/frutas/melancia.png'
     },
     {
         nome: 'Abacaxi',
@@ -428,7 +428,7 @@ export const frutas =[
         gord: 0.1,
         carb: 13.1,
         kcal: 50,
-        imagem:'./icons/frutas/abacaxi.png'
+        imagem:'/icons/frutas/abacaxi.png'
     },
     {
         nome: 'Morango',
@@ -438,7 +438,7 @@ export const frutas =[
         gord: 0.3,
         carb: 7.7,
         kcal: 32,
-        imagem:'./icons/frutas/morango.png'
+        imagem:'/icons/frutas/morango.png'
     },
     {
         nome: 'Pêra',
@@ -448,7 +448,7 @@ export const frutas =[
         gord: 0.1,
         carb: 15.0,
         kcal: 57,
-        imagem:'./icons/frutas/pera.png'
+        imagem:'/icons/frutas/pera.png'
     },
     {
         nome: 'Goiaba',
@@ -458,7 +458,7 @@ export const frutas =[
         gord: 0.9,
         carb: 14.3,
         kcal: 68,
-        imagem:'./icons/frutas/goiaba.png'
+        imagem:'/icons/frutas/goiaba.png'
     },
     {
         nome: 'Abacate',
@@ -468,6 +468,6 @@ export const frutas =[
         gord: 15.0,
         carb: 8.5,
         kcal: 160,
-        imagem:'./icons/frutas/abacate.png'
+        imagem:'/icons/frutas/abacate.png'
     }
 ]

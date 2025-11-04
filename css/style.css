@@ -75,6 +75,9 @@ a{
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.tabela-dieta{
+    display: none;
+}
 .menu-mobile{
     display: none;
 }
@@ -407,4 +410,39 @@ a{
     height: auto;
     padding: 10px;
 }
+}
+#totais{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+}
+.totais-info{
+    display: flex;
+    border: 1px solid rgb(207, 205, 205);
+    font-family: 'roboto', sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#carrinho {
+  padding: 10px;
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-family: 'cereal';
+  font-size: 13px;
+}
+
+.qtd-controls button, .btn-remover {
+  cursor: pointer;
+  padding: 4px 8px;
 }

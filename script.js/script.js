@@ -4,7 +4,7 @@ const btnCarbo = document.querySelector("#btnCarboidratos")
 const btnFrutas = document.querySelector("#btnFrutas")
 const mesgBoasVindas = document.querySelector("#mensagem-boas-vindas")
 const listaDeAlimentos = document.querySelector("#lista-alimentos")
-const imgAlientos = document.querySelector("#img-alimentos")
+const imgAlimentos = document.querySelector("#img-alimentos")
 const pesquisar = document.querySelector("#pesquisar")
 const btnMenuMobile = document.querySelector("#btn-menu-mobile")
 const menuMBL = document.querySelector("#menu-mbl")
@@ -31,7 +31,7 @@ btnFrutas.addEventListener("click", ()=>{
 
 function addItens(elemento){
     mesgBoasVindas.style.display = "none";
-    imgAlientos.style.display = "none";
+    imgAlimentos.style.display = "none";
 
     listaDeAlimentos.innerHTML= "";
     listaDeAlimentos.style.display = "flex";
@@ -39,8 +39,9 @@ function addItens(elemento){
     elemento.forEach(item =>{
         const div = document.createElement('div');
         div.classList.add('alimento', 'fade-in');
+        div.dataset.nome = item.nome;
         div.innerHTML = `
-        <img src="${item.imagem}","style="width:32px; height:32px;">
+        <img src="${item.imagem}""style="width:32px; height:32px;">
       <span><strong>${item.nome}</strong></span><span>Proteinas: ${item.prot}g</span><span>Gorduras: ${item.gord}g</span>
       <span>Carbo: ${item.carb}g</span><span>Kcal: ${item.kcal}</span>
         `
@@ -50,7 +51,7 @@ function addItens(elemento){
 
 function mostrarPesquisa(lista){
     mesgBoasVindas.style.display = "none";
-    imgAlientos.style.display = "none";
+    imgAlimentos.style.display = "none";
     listaDeAlimentos.innerHTML = "";
     listaDeAlimentos.style.display = "flex";
     
@@ -59,7 +60,7 @@ function mostrarPesquisa(lista){
         const div = document.createElement("div");
         div.classList.add('alimento', 'fade-in');
         div.innerHTML = `
-        <img src="${item.imagem}","style="width:32px; height:32px;">
+        <img src="${item.imagem}""style="width:32px; height:32px;">
       <span><strong>${item.nome}</strong></span><span>Proteinas: ${item.prot}g</span><span>Gorduras: ${item.gord}g</span>
       <span>Carbo: ${item.carb}g</span><span>Kcal: ${item.kcal}</span>
         `
@@ -73,7 +74,7 @@ pesquisar.addEventListener("input", (e)=>{
     if(texto === ""){
         listaDeAlimentos.innerHTML = "";
         mesgBoasVindas.style.display = "block";
-        imgAlientos.style.display = "block";
+        imgAlimentos.style.display = "block";
         return
     }
 
@@ -133,19 +134,36 @@ const btnDelete = document.querySelector(".add-remove2");
 
 if(btnDelete){
     btnDelete.addEventListener("click", ()=>{
-        document.querySelectorAll(".alimento.selecionado").forEach(el => el.remove());
+        document.querySelectorAll(".alimento.selecionado").forEach(el => {
+            el.classList.remove("selecionado");
+        });
         atualizarBarra();
     })
 }
 
 if(btnAdd){
-    btnAdd.addEventListener("click", ()=>{
-        const selecionados =  Array.from(document.querySelectorAll(".alimento.selecioado"))
-        selecionados.map(el => el.querySelector("strong")?.textContent?.trim() || "item");
+     btnAdd.addEventListener("click", () => {
+         const selecionados = Array.from(document.querySelectorAll(".alimento.selecionado"));
+    
+    const selecionadosObjs = selecionados.map(div => {
+      const nome = div.dataset.nome;
+      return alimentos.find(item => item.nome === nome);
+    });
 
-        console.log("Adicionar esses itens:", selecionados);
 
-        document.querySelectorAll(".alimento.selecionado").forEach(el => el.classList.remove("selecionado"));
-        atualizarBarra();
-    })
+        // pega o que já existe
+    let jaSalvos = JSON.parse(localStorage.getItem("alimentosSelecionados")) || [];
+
+    // adiciona os novos itens ao array anterior
+    const atualizados = [...jaSalvos, ...selecionadosObjs];
+
+    // salva tudo junto
+    localStorage.setItem("alimentosSelecionados", JSON.stringify(atualizados));
+
+
+
+    window.location.href = "pages/criardieta.html";
+
+  });
 }
+
