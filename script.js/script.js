@@ -4,7 +4,6 @@ const btnCarbo = document.querySelector("#btnCarboidratos")
 const btnFrutas = document.querySelector("#btnFrutas")
 const mesgBoasVindas = document.querySelector("#mensagem-boas-vindas")
 const listaDeAlimentos = document.querySelector("#lista-alimentos")
-const imgAlimentos = document.querySelector("#img-alimentos")
 const pesquisar = document.querySelector("#pesquisar")
 const btnMenuMobile = document.querySelector("#btn-menu-mobile")
 const menuMBL = document.querySelector("#menu-mbl")
@@ -31,9 +30,8 @@ btnFrutas.addEventListener("click", ()=>{
 
 function addItens(elemento){
     mesgBoasVindas.style.display = "none";
-    imgAlimentos.style.display = "none";
 
-    listaDeAlimentos.innerHTML= "";
+    listaDeAlimentos.innerHTML = "";
     listaDeAlimentos.style.display = "flex";
 
     elemento.forEach(item =>{
@@ -41,17 +39,20 @@ function addItens(elemento){
         div.classList.add('alimento', 'fade-in');
         div.dataset.nome = item.nome;
         div.innerHTML = `
-        <img src="${item.imagem}""style="width:32px; height:32px;">
-      <span><strong>${item.nome}</strong></span><span>Proteinas: ${item.prot}g</span><span>Gorduras: ${item.gord}g</span>
-      <span>Carbo: ${item.carb}g</span><span>Kcal: ${item.kcal}</span>
-        `
+            <img src="${item.imagem}" style="width:32px; height:32px;">
+            <span><strong>${item.nome}</strong></span>
+            <span>Proteinas: ${item.prot}g</span>
+            <span>Gorduras: ${item.gord}g</span>
+            <span>Carbo: ${item.carb}g</span>
+            <span>Kcal: ${item.kcal}</span>
+        `;
         listaDeAlimentos.appendChild(div);
-    })
-};
+    });
+}
+
 
 function mostrarPesquisa(lista){
     mesgBoasVindas.style.display = "none";
-    imgAlimentos.style.display = "none";
     listaDeAlimentos.innerHTML = "";
     listaDeAlimentos.style.display = "flex";
     
@@ -74,7 +75,6 @@ pesquisar.addEventListener("input", (e)=>{
     if(texto === ""){
         listaDeAlimentos.innerHTML = "";
         mesgBoasVindas.style.display = "block";
-        imgAlimentos.style.display = "block";
         return
     }
 

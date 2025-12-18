@@ -159,6 +159,79 @@ a{
     padding: 20px;
     height: 700px;
 }
+.mensagem-boas-vindas{
+    display: flex;
+    gap: 20px;
+}
+.msg-cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'roboto';
+    font-weight: 300;
+
+}
+.mensagem-boas-vindas1{
+    display: flex;
+    flex: 1;
+    font-family: 'cereal';
+    padding: 10px;
+    gap: 10px;
+    
+}
+.mensagem-boas-vindas1 img{
+    width: 150px;
+}
+.msg-b1{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #F0FFFF;
+}
+.mensagem-boas-vindas2{
+    display: flex;
+    flex: 1;
+    font-family: 'cereal';
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.mensagem-boas-vindas2 img{
+    width: 150px;
+    height: auto;
+}
+.msg-b2{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.mensagem-boas-vindas3{
+    display: flex;
+    flex: 1;
+    font-family: 'cereal';
+    padding: 10px;
+    gap: 10px;
+}
+.mensagem-boas-vindas3 img{
+    width: 150px;
+    height: auto;
+}
+.msg-b3{
+        display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #F0FFFF;
+}
 .right{
     display: flex;
     flex: 1;
@@ -424,6 +497,84 @@ a{
     border-radius: 8px;
     padding: 20px;
     height: 100%;
+}
+
+.msg-cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 12px;
+
+}
+.mensagem-boas-vindas1{
+    display: flex;
+    flex: 1;
+    font-family: 'cereal';
+    padding: 10px;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+    
+}
+.mensagem-boas-vindas1 img{
+    width: 60px;
+    height: 60px;
+}
+.msg-b1{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #F0FFFF;
+}
+.mensagem-boas-vindas2{
+    display: flex;
+    flex: 1;
+    font-family: 'cereal';
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.mensagem-boas-vindas2 img{
+    width: 60px;
+    height: 60px;
+}
+.msg-b2{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.mensagem-boas-vindas3{
+    display: flex;
+    flex: 1;
+    font-family: 'cereal';
+    padding: 10px;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.mensagem-boas-vindas3 img{
+    width: 60px;
+    height: 60px;
+}
+.msg-b3{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #F0FFFF;
 }
 
 }
