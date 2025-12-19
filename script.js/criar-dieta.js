@@ -37,12 +37,19 @@ function atualizarCarrinho(){
       <span>Quant: ${item.quantidade * item.qtd}g</span>
 
       <div class="qtd-controls">
-        <button class="btn-menos">-</button>
-        <span>${item.qtd}</span>
-        <button class="btn-mais">+</button>
+        <div class="qtd-controls-item" >
+          <button class="btn-menos">-</button>
+          <span>${item.qtd}</span>
+          <button class="btn-mais">+</button>
+        </div>
+
       </div>
       
-      <button class="btn-remover">Remover</button>
+     <button class="btn-remover">
+        <img src="../icons/trash.png" alt="Remover" class="icon-remover">
+
+    </button>
+
     `;
 
     // Eventos dos botões

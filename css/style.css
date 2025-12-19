@@ -29,23 +29,29 @@ body, html{
 .logo-tipo{
     display: flex;
     flex: 3;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
 }
 .ad-top {
-  width: 100%;     /* largura padrão de banner mobile */
-  height: 100px;    /* pode ser 50px também */
-  margin: 0 auto;   /* centraliza horizontalmente */
-  background: #ddd; /* cor de fundo só pra visualizar o espaço */
-  text-align: center;
-  line-height: 100px; /* alinha texto verticalmente se tiver */
-  color: #333;
+
+/*ANUNCIOS AQUI */
+
 }
 a{
     text-decoration: none;
     color: inherit;
 }
 .logo-tipo img{
-    width: 100px;
-    height: auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.logo-tipo b{
+    font-family: 'roboto';
+    font-size: 25px;
+    color: #fff;
+
 }
 .menu-item{
     display: flex;
@@ -373,6 +379,48 @@ a{
     color: #fff;
     font-family: 'roboto', sans-serif;
 }
+
+.sobre {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.sobre-card {
+  max-width: 800px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-card h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+  color: #0f172a;
+  font-family: 'roboto';
+}
+
+.sobre-card p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 18px;
+  font-family: 'cereal';
+}
+
+.sobre-destaque {
+  background: #e6f6ff;
+  border-left: 5px solid #00bfff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: #075985;
+  font-weight: 500;
+}
+
+
 @media (max-width: 768px){
     .menu{
     height: 80px;
@@ -385,11 +433,17 @@ a{
     display: flex;
     flex: 1;
     justify-content: flex-start;
-    padding: 0;
+    padding: 5px;
+    gap: 5px;
 }
 .logo-tipo img{
-    width: 80px;
-    height: auto;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.logo-tipo b{
+    font-family: 'roboto';
+    font-size: 14px;
 }
 .menu-item-1,
 .menu-item-2,
@@ -433,13 +487,9 @@ a{
     display: none;
 }
 .ad-top {
-  width: 100%;     /* largura padrão de banner mobile */
-  height: 100px;    /* pode ser 50px também */
-  margin: 0 auto;   /* centraliza horizontalmente */
-  background: #ddd; /* cor de fundo só pra visualizar o espaço */
-  text-align: center;
-  line-height: 100px; /* alinha texto verticalmente se tiver */
-  color: #333;
+
+
+/*ANUNCIOS AQUI*/
 }
 .menuresponsivo{
     display: none; /* escondido por padrão */
@@ -576,6 +626,17 @@ a{
     background-color: #333;
     color: #F0FFFF;
 }
+.sobre-card {
+    padding: 28px;
+  }
+
+  .sobre-card h2 {
+    font-size: 26px;
+  }
+
+  .sobre-card p {
+    font-size: 16px;
+  }
 
 }
 #totais{
@@ -611,5 +672,65 @@ a{
 
 .qtd-controls button, .btn-remover {
   cursor: pointer;
-  padding: 4px 8px;
+  border: none;
+  padding: 2px 6px;
+
+
+}
+.qtd-controls-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-remover{
+    width: 32px;
+    height: 32px;
+}
+.btn-mais{
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn-menos{
+    font-size: 30px;
+    cursor: pointer;
+}
+#totais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.btnDownload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.btnDownload button{
+    background-color: #00BFFF;
+    padding: 10px;
+    border: #00BFFF;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: 18px;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, border 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btnDownload:hover{
+    background-color: #0689f5;
+    border: #057ddf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.alimentos-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'roboto';
+    font-family: 30px;
 }

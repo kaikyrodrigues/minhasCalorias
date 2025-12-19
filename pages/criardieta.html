@@ -12,13 +12,14 @@
             <div class="menu">
                 <div class="logo-tipo">
                     <a href="../index.html"><img src="../icons/Logo.png" alt=""></a>
+                    <b>DIETAGRATIS</b>
                 </div>             
                 <div class="menu-item">
                     <div class="menu-item-1" id="btnCriarDieta" >
-                        <a href="./pages/criardieta.html"><b>Criar dieta</b></a>                      
+                        <b>Criar dieta</b>                  
                     </div>
                     <div class="menu-item-2">
-                       <a href="./pages/calcularbiotipo.html"><b>Calcular biotipo</b></a> 
+                       <a href="./calcularbiotipo.html"><b>Calcular biotipo</b></a> 
                     </div>
                     <div class="menu-item-3">
                         <b>Sobre</b>
@@ -44,25 +45,39 @@
         <div class="ad-top"></div>
 
     </header>
+    <div class="corpo">
+        <div class="left">
 
-    <div id="lista-alimentos"></div>
+        </div>
+        <div class="center fade-in">
 
-    <div id="carrinho">
-    <h2>Alimentos Selecionados</h2>
-    <div id="lista-carrinho"></div>
+        <div id="lista-alimentos"></div>
 
-    <div id="totais">
-        <h3>Total:</h3>
-        <div><p class="totais-info" id="total-prot"></p></div>
-        <div><p class="totais-info" id="total-carb"></p></div>
-        <div><p class="totais-info" id="total-gord"></p></div>
-        <div><p class="totais-info" id="total-kcal"></p></div>
+        <div id="carrinho">
+            <div class="alimentos-select">
+                <h2>Alimentos Selecionados</h2>
+            </div>
         
-    </div>
-        <div>
-            <button id="btnDownload">Download Dieta</button>
+        <div id="lista-carrinho"></div>
+
+        <div id="totais">
+            <h3>Total:</h3>
+            <div><p class="totais-info" id="total-prot"></p></div>
+            <div><p class="totais-info" id="total-carb"></p></div>
+            <div><p class="totais-info" id="total-gord"></p></div>
+            <div><p class="totais-info" id="total-kcal"></p></div>
+            
+        </div>
+            <div class="btnDownload">
+                <button id="btnDownload">Download</button>
+            </div>
+        </div>
+        </div>
+        <div class="right">
+
         </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <script type="module" src="../script.js/criar-dieta.js"></script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Calorias</title>
+    <title>Dieta Gratis</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -11,18 +11,18 @@
         <menu>
             <div class="menu">
                 <div class="logo-tipo">
-                    <img src="./icons/perda-de-peso.png" alt="">
-                    <b>Minhas Calorias</b>
+                    <a href="../index.html"><img src="../icons/Logo.png" alt=""></a>
+                    <b>DIETAGRATIS</b>
                 </div>             
                 <div class="menu-item">
                     <div class="menu-item-1">
-                        <b>Criar dieta</b>
+                        <a href="./criardieta.html"><b>Criar dieta</b></a>                      
                     </div>
                     <div class="menu-item-2">
                         <b>Calcular biotipo</b>
                     </div>
                     <div class="menu-item-3">
-                        <b>Sobre</b>
+                        <a href="./sobre.html"><b>Sobre</b></a> 
                     </div>
                 </div>
                 <div class="pesquisar-item">
@@ -35,8 +35,12 @@
         </menu>
     </header>
 
-    <main>
-        <div class="calculadora fade-in">
+    <main class="corpo">
+        <div class="left">
+
+        </div>
+        <div class="center fade-in">
+            <div class="calculadora fade-in">
             
             <div class="cal-item"><h2>Calculadora de Biotipo</h2></div>
             <div class="cal-item">
@@ -74,6 +78,11 @@
 
             <div class="cal-item fade-in" id="result-bioptipo"></div>
         </div>
+
+        </div>
+        <div class="right">
+
+        </div>  
     </main>
 
     <script type="module"  src="../script.js/calculadora.js"></script>
