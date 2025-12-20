@@ -18,6 +18,14 @@
 body, html{
     height: 100%;
     background-color: #F0FFFF;
+    display: flex;
+    flex-direction: column;
+}
+section {
+  flex: 1;
+}
+main{
+    flex: 1;
 }
 .menu{
     height: 80px;
@@ -420,6 +428,15 @@ a{
   font-weight: 500;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'cereal';
+    color: gray;
+    border-top: 1px solid rgb(218, 217, 217);
+    height: 50px;
+}
 
 @media (max-width: 768px){
     .menu{
@@ -459,10 +476,10 @@ a{
 }
 
 .menu-mobile img{
-    width: 48px;
+    width: 32px;
     height: auto;
     padding-right: 5px;
-    margin-left: -8;
+
 }
 .pesquisar-item{
     display: flex;
@@ -506,6 +523,7 @@ a{
     list-style: none;
     text-align: right;
     transition: all 0.2s ease;
+    z-index: 9999;
     
 }
 .menuresponsivo:hover{
@@ -638,6 +656,17 @@ a{
     font-size: 16px;
   }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'cereal';
+    font-size: 12px;
+    color: gray;
+    border-top: 1px solid rgb(218, 217, 217);
+    height: 40px;
+}
+
 }
 #totais{
     display: flex;
@@ -705,6 +734,7 @@ a{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    gap: 10px;
 }
 .btnDownload button{
     background-color: #00BFFF;
@@ -733,4 +763,11 @@ a{
     padding: 10px;
     font-family: 'roboto';
     font-family: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+.alimentos-select img{
+    width: 24px;
+    height: auto;
+    margin-bottom: -2px;
 }

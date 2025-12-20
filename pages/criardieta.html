@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Calorias</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../icons/favicon.png">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
                        <a href="./calcularbiotipo.html"><b>Calcular biotipo</b></a> 
                     </div>
                     <div class="menu-item-3">
-                        <b>Sobre</b>
+                        <a href="./sobre.html"><b>Sobre</b></a> 
                     </div>
                 </div>
                 <div class="pesquisar-item">
@@ -36,8 +37,8 @@
 
                     <nav class="menuresponsivo fade-in" id="menu-mbl">
                         <li><a href="http://">Criar dieta</a></li>
-                        <li><a href="./pages/calcularbiotipo.html">Calcular biotipo</a></li>
-                        <li><a href="http://">Sobre</a></li>
+                        <li><a href="./calcularbiotipo.html">Calcular biotipo</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
                     </nav>
                 </div>
             </div>
@@ -45,7 +46,9 @@
         <div class="ad-top"></div>
 
     </header>
-    <div class="corpo">
+    
+    <main class="corpo">
+        
         <div class="left">
 
         </div>
@@ -55,7 +58,10 @@
 
         <div id="carrinho">
             <div class="alimentos-select">
-                <h2>Alimentos Selecionados</h2>
+                <h2>Alimentos Selecionados:</h2>
+                <p id="msg-vazio" class="msg-vazio">
+                   <img src="../icons/sinal-de-aviso.png" alt=""> Nenhum alimento selecionado
+                </p>
             </div>
         
         <div id="lista-carrinho"></div>
@@ -70,16 +76,22 @@
         </div>
             <div class="btnDownload">
                 <button id="btnDownload">Download</button>
+                <button id="btnLimparTudo" class="btn-danger">Apagar tudo</button>
             </div>
         </div>
         </div>
         <div class="right">
 
         </div>
-    </div>
+    
+    </main>
 
+     <footer class="footer">
+        © 2025 — www.dietagratis.com.br | Dúvidas e sugestões: contatodietagratis@gmail.com
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
-    <script type="module" src="../script.js/criar-dieta.js"></script>
+
+    <script type="module" src="../script/criar-dieta.js"></script>
 </body>
 </html>

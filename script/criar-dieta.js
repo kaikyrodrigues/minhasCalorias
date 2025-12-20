@@ -1,6 +1,9 @@
-const btnMenuMobile = document.querySelector("#btn-menu-mobile")
-const menuMBL = document.querySelector("#menu-mbl")
-const btnDownload = document.querySelector("#btnDownload")
+const btnMenuMobile = document.querySelector("#btn-menu-mobile");
+const menuMBL = document.querySelector("#menu-mbl");
+const btnDownload = document.querySelector("#btnDownload");
+const msgVazio = document.querySelector("#msg-vazio");
+const btnLimparTudo = document.querySelector("#btnLimparTudo");
+
 
 btnMenuMobile.addEventListener("click", () =>{
     menuMBL.classList.toggle("mostrar")
@@ -76,6 +79,19 @@ function atualizarCarrinho(){
   });
 
   atualizarTotais();
+  atualizarEstadoCarrinho();
+}
+
+function atualizarEstadoCarrinho(){
+  if(listaCarrinho.children.length === 0){
+    btnDownload.style.display = "none";
+    btnLimparTudo.style.display = "none";
+    msgVazio.style.display = "block";
+  }else{
+    btnDownload.style.display = "block";
+    btnDownload.style.display = "block";
+    msgVazio.style.display = "none";
+  }
 }
 
 function atualizarTotais(){
@@ -97,6 +113,18 @@ function salvarEAtualizar(){
 
 // Primeiro carregamento
 atualizarCarrinho();
+
+btnLimparTudo.addEventListener("click", () => {
+    const confirmar = confirm("Tem certeza que deseja apagar todos os alimentos?");
+    
+    if (!confirmar) return;
+
+    selecionados = [];
+    localStorage.removeItem("alimentosSelecionados");
+
+    atualizarCarrinho();
+});
+
 
 function gerarPDF() {
   const doc = new jsPDF();
@@ -161,4 +189,6 @@ function gerarPDF() {
 btnDownload.addEventListener("click", ()=>{
     gerarPDF();
 })
+
+atualizarEstadoCarrinho();
 

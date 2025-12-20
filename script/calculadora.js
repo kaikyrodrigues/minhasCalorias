@@ -1,6 +1,8 @@
 const resultado  = document.querySelector("#result-bioptipo");
 const btnCalcular = document.querySelector("#btnCalcular")
 const btnLimpar = document.querySelector("#btnLimpar")
+const btnMenuMobile = document.querySelector("#btn-menu-mobile")
+const menuMBL = document.querySelector("#menu-mbl")
 
 btnCalcular.addEventListener("click", ()=> {
     const metabolismo = document.querySelector("#metabolismo").value;
@@ -29,4 +31,8 @@ else{
 btnLimpar.addEventListener("click", ()=>{
     resultado.innerHTML = "";
     btnLimpar.style.display = 'none';
+});
+
+btnMenuMobile.addEventListener("click", () =>{
+    menuMBL.classList.toggle("mostrar")
 })

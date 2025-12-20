@@ -2,31 +2,54 @@ const btnProteinas = document.querySelector("#btnProteinas")
 const btnProtVege = document.querySelector("#protVeg")
 const btnCarbo = document.querySelector("#btnCarboidratos")
 const btnFrutas = document.querySelector("#btnFrutas")
+const btnVegetais = document.querySelector("#btnVegetais")
+const btnLaticinios = document.querySelector("#btnLaticinios")
 const mesgBoasVindas = document.querySelector("#mensagem-boas-vindas")
 const listaDeAlimentos = document.querySelector("#lista-alimentos")
 const pesquisar = document.querySelector("#pesquisar")
 const btnMenuMobile = document.querySelector("#btn-menu-mobile")
 const menuMBL = document.querySelector("#menu-mbl")
 const barraAddRemove =  document.querySelector("#addremove")
-import {proteinas, proteinasVegetais, carboidratos, frutas} from './alimentos.js'
+import {proteinas, proteinasVegetais, carboidratos, frutas, vegetais, laticinios} from './alimentos.js'
 
-const alimentos = [...proteinas,...proteinasVegetais,...carboidratos,...frutas]
+const alimentos = [...proteinas,...proteinasVegetais,...carboidratos,...frutas,...vegetais,...laticinios]
 
-btnCarbo.addEventListener("click", ()=>{
+if(btnCarbo){
+    btnCarbo.addEventListener("click", ()=>{
     addItens(carboidratos);
 })
+};
 
-btnProteinas.addEventListener("click", ()=>{
+if(btnProteinas){
+    btnProteinas.addEventListener("click", ()=>{
     addItens(proteinas);
 });
+};
 
-btnProtVege.addEventListener("click", ()=>{
+if(btnProtVege){
+    btnProtVege.addEventListener("click", ()=>{
     addItens(proteinasVegetais);
 });
+};
 
-btnFrutas.addEventListener("click", ()=>{
+if(btnFrutas){
+    btnFrutas.addEventListener("click", ()=>{
     addItens(frutas);
 });
+};
+
+if(btnVegetais){
+    btnVegetais.addEventListener("click", ()=>{
+        addItens(vegetais);
+    })
+}
+
+if(btnLaticinios){
+    btnLaticinios.addEventListener("click", ()=>{
+        addItens(laticinios);
+    })
+};
+
 
 function addItens(elemento){
     mesgBoasVindas.style.display = "none";
@@ -101,7 +124,8 @@ itensSelect.forEach(item =>{
     })
 })
 
-listaDeAlimentos.addEventListener("click", (e)=>{
+if(listaDeAlimentos){
+    listaDeAlimentos.addEventListener("click", (e)=>{
     const alimento =  e.target.closest(".alimento");
     if(!alimento) return;
 
@@ -109,6 +133,8 @@ listaDeAlimentos.addEventListener("click", (e)=>{
 
     atualizarBarra();
 })
+}
+
 
 function atualizarBarra(){
     const contarAlimentos = document.querySelectorAll(".alimento.selecionado").length;

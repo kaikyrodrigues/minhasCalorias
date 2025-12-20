@@ -470,4 +470,211 @@ export const frutas =[
         kcal: 160,
         imagem:'/icons/frutas/abacate.png'
     }
-]
+];
+
+export const vegetais = [
+    {
+        nome: 'Alface',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 1.4,
+        gord: 0.2,
+        carb: 2.9,
+        kcal: 15,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Tomate',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 0.9,
+        gord: 0.2,
+        carb: 3.9,
+        kcal: 18,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Cenoura',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 0.9,
+        gord: 0.2,
+        carb: 9.6,
+        kcal: 41,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Brócolis',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 2.8,
+        gord: 0.4,
+        carb: 6.6,
+        kcal: 34,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Cebola',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 1.1,
+        gord: 0.1,
+        carb: 9.3,
+        kcal: 40,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Pimentão',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 0.9,
+        gord: 0.2,
+        carb: 4.6,
+        kcal: 20,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Pepino',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 0.8,
+        gord: 0.1,
+        carb: 3.6,
+        kcal: 16,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Espinafre',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 2.9,
+        gord: 0.4,
+        carb: 3.6,
+        kcal: 23,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Alho',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 6.4,
+        gord: 0.5,
+        carb: 33,
+        kcal: 149,
+        imagem:'/icons/frutas/abacate.png'
+    },
+    {
+        nome: 'Alface',
+        quantidade: 100,
+        unidade: 'g',
+        prot: 1.4,
+        gord: 0.2,
+        carb: 2.9,
+        kcal: 15,
+        imagem:'/icons/frutas/abacate.png'
+    },
+];
+
+export const laticinios = [
+    {
+    nome: 'Leite integral',
+    quantidade: 100,
+    unidade: 'ml',
+    prot: 3.2,
+    gord: 3.3,
+    carb: 4.8,
+    kcal: 61,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Leite desnatado',
+    quantidade: 100,
+    unidade: 'ml',
+    prot: 3.4,
+    gord: 0.1,
+    carb: 5.0,
+    kcal: 34,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Iogurte integral',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 3.5,
+    gord: 3.3,
+    carb: 4.7,
+    kcal: 61,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Iogurte desntd',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 4.0,
+    gord: 0.4,
+    carb: 6.0,
+    kcal: 41,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Queijo mussarela',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 22.0,
+    gord: 22.0,
+    carb: 2.2,
+    kcal: 280,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Queijo prato',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 22.7,
+    gord: 29.0,
+    carb: 1.7,
+    kcal: 352,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Queijo minas',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 17.4,
+    gord: 20.2,
+    carb: 3.2,
+    kcal: 264,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Requeijão trad',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 9.6,
+    gord: 23.0,
+    carb: 4.5,
+    kcal: 257,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Manteiga',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 0.5,
+    gord: 82.0,
+    carb: 0.1,
+    kcal: 717,
+    imagem: '/icons/frutas/abacate.png'
+},
+{
+    nome: 'Creme de leite',
+    quantidade: 100,
+    unidade: 'g',
+    prot: 2.0,
+    gord: 20.0,
+    carb: 3.0,
+    kcal: 206,
+    imagem: '/icons/frutas/abacate.png'
+}
+
+];
